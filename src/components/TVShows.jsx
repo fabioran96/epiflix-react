@@ -71,7 +71,7 @@ class TVShows extends Component {
                   {group.map(movie => (
                     <Col key={movie.imdbID} xs={12} sm={6} md={4} lg={2} className="text-center">
                         <Link to={`/movie-details/${movie.imdbID}`}>
-                      <img src={movie.Poster} alt={movie.Title} style={{ width: '100px', height: '150px', marginRight: '10px' }} />
+                      <img src={movie.Poster} alt={movie.Title} style={{ width: '180px', height: '230px'}} />
                       </Link>
                       <p>{movie.Title} ({movie.Year})</p>
                     </Col>
