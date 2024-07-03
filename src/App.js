@@ -1,7 +1,7 @@
 import HomePage from './components/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import TVShows from './components/TVShows';
-import MovieDetails from './components/MovieDetails';
+import MovieDetails from './components/MovieDetails.jsx';
 
 
 function App() {
