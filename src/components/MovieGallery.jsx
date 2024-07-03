@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { Carousel, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './MovieGallery.css'
 
 class MovieGallery extends Component {
@@ -51,6 +52,7 @@ class MovieGallery extends Component {
             <Carousel.Item key={idx}>
               <div className="d-flex justify-content-center">
                 {group.map(movie => (
+                  <Link key={movie.imdbID} to={`/movie-details/${movie.imdbID}`}>
                   <Image
                     key={movie.imdbID}
                     className="img-fluid mx-1"
@@ -58,6 +60,7 @@ class MovieGallery extends Component {
                     alt={movie.Title}
                     style={{ width: '150px', height: '225px' }} 
                   />
+                  </Link>
                 ))}
               </div>
             </Carousel.Item>
